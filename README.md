@@ -1,10 +1,10 @@
 # marlin
 answers to tests
-1. Первый вариант 
-
-
+1. Ассоциативный массив лучше т.к. можно получить структурированную информацию из таблицы в базе данных
+например создаём массив 'users' и добавляем в массив одного 'user'
 $users = [
     [
+        'id' => '1',
         'image_path' => 'img/demo/avatars/avatar-b.png',
         'name' => 'Oliver',
         'surname' => 'Kopyov',
@@ -16,20 +16,14 @@ $users = [
         'facebook_link' => '',
         'twitter_link' => '',
         'linkedin_link' => '',
-        'status' => 'status-success',
+        'status' => 'status-success'
     ],
+<--            это один пользователь со своими определёнными данными             -->
     [
-        'image_path' => 'img/demo/avatars/avatar-c.png',
-        'name' => 'Sasha',
-        'surname' => 'Gray',
-        'profession' => 'Project Manager',
-        'company' => 'Gotbootstrap Inc.',
-        'phone_number' => '+1 313-461-1347',
-        'email' => 'sasha.gray@smartadminwebapp.com',
-        'location' => '134 Hamtrammac, Detroit, MI, 48314, USA',
-        'facebook_link' => '',
-        'twitter_link' => '',
-        'linkedin_link' => '',
-        'status' => 'status-warning',
-    ]
+       ассоциативный массив данных
+    ],
 ];
+удобство в том, что подготовив структуру можно: показывать на экране/добавлять/удалять/редактировать пользователей из базы данных
+
+
+
